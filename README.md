@@ -1,4 +1,5 @@
-## Weather API (FastAPI + Redis + Docker)
+# [Weather Service](https://github.com/dmitriymarinin/weather-api.git)
+__Пример решения задачи [weather-api-wrapper-service](https://roadmap.sh/projects/weather-api-wrapper-service) с сайта [roadmap.sh](https://roadmap.sh/).__
 
 Простой API погоды на Python с использованием FastAPI, внешнего сервиса Visual Crossing и кэша в Redis.  
 Проект показывает, как работать со сторонними API, кэшированием и переменными окружения, а также запускать сервис в Docker/Docker Compose.
@@ -61,7 +62,3 @@ docker-compose up --buildПосле запуска:
     "source": "live"
   }
   При повторных запросах с теми же параметрами `city`/`country` данные берутся из Redis-кэша (поле `source` будет `"cache"`), пока кэш не истечёт.
-
-### Project URL
-
-[https://github.com/dmitriymarinin/weather-api](https://github.com/dmitriymarinin/weather-api)
