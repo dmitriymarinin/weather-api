@@ -16,20 +16,26 @@ __Пример решения задачи [weather-api-wrapper-service](https:/
 
 ---
 
-### Переменные окружения
+### Как запустить
 
-Создайте файл `.env` в корне проекта и укажите:
+1. **Склонировать репозиторий:**
 
-VISUALCROSSING_API_KEY=ваш_ключ_из_Visual_Crossing
-CACHE_TTL_SECONDS=43200
-# REDIS_URL можно не указывать — в docker-compose он переопределяется на redis://redis:6379/0---
+  
+   git clone https://github.com/dmitriymarinin/weather-api.git
+   cd weather-api
+   2. **Создать файл `.env` в корне проекта:**
 
-### Запуск через Docker Compose
+  
+   VISUALCROSSING_API_KEY=ваш_ключ_из_Visual_Crossing
+   CACHE_TTL_SECONDS=43200
+   3. **Запустить сервисы через Docker Compose:**
 
-docker-compose up --buildПосле запуска:
+  
+   docker-compose up --build
+   После запуска:
 
-- API будет доступно по адресу: `http://localhost:8000`
-- Redis поднимается как отдельный сервис и доступен внутри сети Docker по имени `redis`
+- API доступно по адресу: `http://localhost:8000`
+- Redis работает как отдельный сервис и доступен внутри сети Docker по имени `redis`
 
 ---
 
