@@ -61,3 +61,7 @@ docker-compose up --buildПосле запуска:
     "source": "live"
   }
   При повторных запросах с теми же параметрами `city`/`country` данные берутся из Redis-кэша (поле `source` будет `"cache"`), пока кэш не истечёт.
+
+### Project URL
+
+[https://github.com/dmitriymarinin/weather-api](https://github.com/dmitriymarinin/weather-api)
